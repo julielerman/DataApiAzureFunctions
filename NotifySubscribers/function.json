@@ -9,6 +9,15 @@
       "databaseName": "dataapidemo",
       "collectionName": "sampsoneats",
       "createLeaseCollectionIfNotExists": false
+    },
+    {
+      "type": "documentDB",
+      "name": "subscriberList",
+      "databaseName": "dataapidemo",
+      "collectionName": "subscribers",
+      "connection": "lermanconference_DOCUMENTDB",
+      "direction": "in",
+      "sqlQuery": "select c.phone from c"
     }
   ],
   "disabled": false
