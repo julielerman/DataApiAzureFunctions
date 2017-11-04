@@ -1,12 +1,6 @@
 #r "Microsoft.Azure.Documents.Client"
-#r "Newtonsoft.Json"
-using System;
-using System.Collections.Generic;
 using Microsoft.Azure.Documents;
 using Twilio;
-using System.Net;
-using Microsoft.Azure.Documents.Client;
-using Newtonsoft.Json;
 
 //twilio.com/blog/2017/01/how-to-send-daily-sms-reminders-using-c-azure-functions-and-twilio.html
 public static void Run(IReadOnlyList<Document> input, TraceWriter log, IEnumerable<dynamic> subscriberList)
