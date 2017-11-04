@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "logDocument",
+      "databaseName": "dataapidemo",
+      "collectionName": "sampsoneats",
+      "createIfNotExists": true,
+      "connection": "lermanconference_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

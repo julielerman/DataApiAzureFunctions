@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "logDocument",
+      "databaseName": "dataapidemo",
+      "collectionName": "subscribers",
+      "createIfNotExists": true,
+      "connection": "lermanconference_DOCUMENTDB",
+      "direction": "out"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "input",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "lermanconference_DOCUMENTDB",
+      "databaseName": "dataapidemo",
+      "collectionName": "sampsoneats",
+      "createLeaseCollectionIfNotExists": false
+    }
+  ],
+  "disabled": false
+}
